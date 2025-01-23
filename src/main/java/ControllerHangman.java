@@ -52,7 +52,6 @@ public class ControllerHangman {
     }
 
     private void checkLetter(Character inputLetter){
-        String s = inputLetter.toString();
         int codePoint = (int) inputLetter;
         if ((codePoint >= 'а' && codePoint <= 'я')  && !errorLetters.toString().contains(inputLetter.toString())){
             String str = hangman.getHiddenWord();
